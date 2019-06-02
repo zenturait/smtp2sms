@@ -20,7 +20,7 @@ Simple SMTP Server that sends SMS via Danish provider InMobile
 	```bash
 	$ sudo docker run -p 25:25 \
 			-e MAILDOMAIN=mail.example.com -e SMTP_USER=user:pwd \
-                        -e SMS_APIKEY=apikey -e SMS_FROM=from/sender
+			-e SMS_APIKEY=apikey -e SMS_FROM=from/sender \
 			--name smtp2sms -d zenturacp/smtp2sms
 	```
 
